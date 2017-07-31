@@ -1,0 +1,108 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://539go.org
+date_format: "ordinal"
+title: 勿语
+subtitle: "Simple philosophy,梁先生's blog"
+description: "记录一些学习笔记、日常等"
+keywords: Unity, Android, Python, 编程, 勿语, 梁先生
+favicon: /favicon.ico
+timezone: Test
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Liangddyy
+organization: 。
+organization_url: 。
+github_username: liangddyy
+location: Fuzhou, China
+email: liangddyy@gmail.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+  -
+    href: /wiki/
+    label: 维基
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: liangddyy/liangddyy.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, other
+comments_provider: other
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: liangddyy
+# http://539go.com/posts/gitment-introduction/
+gitment:
+    owner: liangddyy
+    repo: blog_comment
+    oauth:
+        client_id: b7613820ffb01a4f67de
+        client_secret: 06cdb25193a18aed6acd864fcb1049eac1af2d54
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: 
+    #UA-80669434-1
