@@ -25,36 +25,6 @@ layout: default
   </div>
 </div>
 </section>
-
-<style>
-	img {
-		cursor: pointer;
-		transition: -webkit-transform 0.1s ease
-	}
-	img:hover{
-		transform: scale({1.003});
-		-ms-transform: scale({1.003});	/* IE 9 */
-		-webkit-transform: scale({1.003});	/* Safari 和 Chrome */
-		-o-transform: scale({1.003});	/* Opera */
-		-moz-transform: scale({1.003});	/* Firefox */
-	}
-	img:focus {
-		transform: scale({1.6});
-		-ms-transform: scale({1.6});	/* IE 9 */
-		-webkit-transform: scale({1.6});	/* Safari 和 Chrome */
-		-o-transform: scale({1.6});	/* Opera */
-		-moz-transform: scale({1.6});	/* Firefox */
-	}
-</style>
-<script>
-	document.addEventListener('DOMContentLoaded', function(){
-		var imgs = document.querySelectorAll('img');
-		Array.prototype.forEach.call(imgs, function(el, i) {
-			if (el.tabIndex <= 0) el.tabIndex = 100;
-		});
-	});
-</script>
-
 <!-- / .banner -->
 <section class="container content">
 <div class="columns">
@@ -77,3 +47,32 @@ layout: default
 </div>
 </section>
 <!-- /section.content -->
+
+<style>
+	img {
+		cursor: pointer;
+		transition: -webkit-transform 0.1s ease
+	}
+	img:hover{
+		transform: scale(1.003);
+		-ms-transform: scale(1.003);	/* IE 9 */
+		-webkit-transform: scale(1.003);	/* Safari 和 Chrome */
+		-o-transform: scale(1.003);	/* Opera */
+		-moz-transform: scale(1.003);	/* Firefox */
+	}
+	img:focus {
+		transform: scale(1.6);
+		-ms-transform: scale(1.6);	/* IE 9 */
+		-webkit-transform: scale(1.6);	/* Safari 和 Chrome */
+		-o-transform: scale(1.6);	/* Opera */
+		-moz-transform: scale(1.6);	/* Firefox */
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', function(){
+		var imgs = document.querySelectorAll('img');
+		Array.prototype.forEach.call(imgs, function(el, i) {
+			if (el.tabIndex <= 0) el.tabIndex = 100;
+		});
+	});
+</script>
