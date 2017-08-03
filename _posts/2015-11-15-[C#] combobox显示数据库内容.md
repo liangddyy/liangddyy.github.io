@@ -3,7 +3,7 @@ layout: post
 title: "[C#] combobox显示数据库内容"
 keywords: 
 description: ""
-category: 
+category: Csharp
 tags: 
 ---
 

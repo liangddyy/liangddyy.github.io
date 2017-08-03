@@ -3,7 +3,7 @@ layout: post
 title: "Navicat连接Oracle出错ora-28547 解决办法"
 keywords: 
 description: ""
-category: 
+category: 数据库
 tags: 
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Unity Android原生项目引用Unity导出的Android工程"
 keywords: 
 description: ""
-category: Unity
+category: Unity Android
 tags: Unity Android
 ---
 

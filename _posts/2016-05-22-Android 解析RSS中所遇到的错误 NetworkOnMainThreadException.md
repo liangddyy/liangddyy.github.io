@@ -3,7 +3,7 @@ layout: post
 title: "Android 解析RSS中所遇到的错误 NetworkOnMainThreadException"
 keywords: 
 description: ""
-category: 
+category: Android
 tags: 
 ---
 

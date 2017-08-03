@@ -3,7 +3,7 @@ layout: post
 title: "typecho插件 pScaleUp"
 keywords: 
 description: ""
-category: 
+category: Typecho
 tags: 
 ---
 

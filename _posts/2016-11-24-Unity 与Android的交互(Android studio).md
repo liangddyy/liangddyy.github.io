@@ -3,7 +3,7 @@ layout: post
 title: "Unity 与Android的交互(Android studio)"
 keywords: 
 description: ""
-category: Unity
+category: Unity Android
 tags: Unity Android
 ---
 

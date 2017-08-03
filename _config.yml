@@ -104,5 +104,5 @@ lazy_load_disqus : true
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id: 
+    # analytics_id: 
     #UA-80669434-1

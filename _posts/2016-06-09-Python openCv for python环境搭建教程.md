@@ -3,7 +3,7 @@ layout: post
 title: "Python openCv for python环境搭建教程"
 keywords: 
 description: ""
-category: 
+category: Python
 tags: 
 ---
 
