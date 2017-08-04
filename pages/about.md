@@ -12,5 +12,4 @@ permalink: /about/
 
 > 怎么联系?  
 
-[liangddyy#foxmail.com](mailto:liangddyy@foxmail.com)
-[1024@539go.com](mailto:1024@539go.com)
+[liangddyy#gmai.com](mailto:liangddyy@gmail.com)
