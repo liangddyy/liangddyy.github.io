@@ -58,12 +58,7 @@ comments: false
         </div>
         <div class="column one-third">
             {% include sidebar-popular-repo.html %}
-            <!-- {% include sidebar-search.html %} -->
-            <!-- UYAN NEW COMMENT BEGIN -->
-            <div id="uyan_newcmt_unit"></div>
-            <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2074283"></script> 
-            <!-- 如果已经过加载此行JS，即可不用重复加载 -->
-            <!-- UYAN NEW COMMENT END -->
+            {% sidebar-recent-comments.html %}
         </div>
     </div>
     <div class="pagination text-align">
