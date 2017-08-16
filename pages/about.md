@@ -8,8 +8,13 @@ menu: 关于
 permalink: /about/
 ---
 
-一个半吊子游戏爱好者兼开发者。  
+---
+
+从小就爱玩游戏，后来就成了个游戏开发者。
 
 > 怎么联系?  
 
 [liangddyy#gmai.com](mailto:liangddyy@gmail.com)
+
+---
+
