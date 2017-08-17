@@ -238,9 +238,9 @@
     margin: 20px 0
 }
 
-.markdown-body {
+/* .markdown-body {
     overflow: hidden
-}
+} */
 
 .markdown-body>:first-child {
     margin-top: 0!important
