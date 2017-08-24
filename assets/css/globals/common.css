@@ -18,9 +18,13 @@
 .slider-panel{
     padding: 5px;
 }
-.slider-panel .a{
+.slider-panel,a{
     font-size: 14px;
-    padding: 4px;
+    margin-left: 4px;
+}
+#lwlhitokoto{
+    font-size: 14px;
+    margin-left: 4px;
 }
 .pagination {
     padding: 20px 0
