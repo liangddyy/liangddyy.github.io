@@ -93,7 +93,7 @@ disqus:
 # http://539go.com/posts/gitment-introduction/
 gitment:
     owner: liangddyy
-    repo: blog_comment
+    repo: BlogComments
     oauth:
         client_id: 2467be91d44574a757e2
         client_secret: 8447efe36c6374954def07d3d037fc86fd4fc70a
