@@ -18,6 +18,10 @@
 .slider-panel{
     padding: 5px;
 }
+.slider-panel .a{
+    font-size: 14px;
+    padding: 4px;
+}
 .pagination {
     padding: 20px 0
 }
