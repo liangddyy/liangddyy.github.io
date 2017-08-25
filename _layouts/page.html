@@ -22,9 +22,6 @@ layout: default
                 <article class="article-content markdown-body">
                     {{ content }}
                 </article>
-                <div class="share">
-                    {% include sns-share.html %}
-                </div>
                 <div class="comment">
                     {% include comments.html %}
                 </div>
@@ -32,7 +29,6 @@ layout: default
             <div class="column one-third">
                 {% include sidebar-search.html %}
                 {% include sidebar-new-post.html %}
-                {% include sidebar-recent-comments.html %}
                 <!-- {% include sidebar-categories-nav.html %}  -->
             </div>
         </div>
