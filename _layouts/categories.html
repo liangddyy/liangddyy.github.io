@@ -17,19 +17,21 @@ layout: default
     <div class="columns">
         <div class="column three-fourths">
             <!-- 搜索框 -->
+            <div id="search-google">
             <script>
-                (function () {
-                    var cx = '011888505851293147966:d1ple63uhiy';
-                    var gcse = document.createElement('script');
-                    gcse.type = 'text/javascript';
-                    gcse.async = true;
-                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                    var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(gcse, s);
+                (function() {
+                  var cx = '011888505851293147966:d1ple63uhiy';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
                 })();
-            </script>
-            <gcse:searchbox></gcse:searchbox>
+              </script>
+              <gcse:searchbox></gcse:searchbox>
             <gcse:searchresults></gcse:searchresults>
+            <div>
             <!-- 搜索框结束 -->
             <article class="article-content markdown-body">
                 {{ content }}
