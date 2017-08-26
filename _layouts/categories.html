@@ -1,6 +1,4 @@
----
-layout: default
----
+--- layout: default ---
 <section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
     <div class="container">
         <div class="columns">
@@ -15,7 +13,22 @@ layout: default
 <!-- / .banner -->
 <section class="container content">
     <div class="columns">
-        <div class="column three-fourths" >
+        <div class="column three-fourths">
+            <!-- 搜索框 -->
+            <script>
+                (function () {
+                    var cx = '011888505851293147966:d1ple63uhiy';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:searchbox></gcse:searchbox>
+            <gcse:searchresults></gcse:searchresults>
+            <!-- 搜索框结束 -->
             <article class="article-content markdown-body">
                 {{ content }}
             </article>
@@ -27,8 +40,7 @@ layout: default
             </div>
         </div>
         <div class="column one-fourth">
-            {% include sidebar-search.html %}
-            {% include sidebar-categories-nav.html %}
+            {% include sidebar-search.html %} {% include sidebar-categories-nav.html %}
         </div>
     </div>
 </section>
