@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "typecho插件 pScaleUp"
+title: "typecho插件 图片放大pScaleUp"
 keywords: 
 description: ""
 category: Typecho
