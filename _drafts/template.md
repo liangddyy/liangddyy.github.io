@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: title
 categories: [cate1, cate2]
 description: 
 keywords: 开发, 

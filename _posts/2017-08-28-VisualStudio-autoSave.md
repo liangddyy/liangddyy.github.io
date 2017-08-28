@@ -1,5 +1,6 @@
 ---
-layout: VisualStudio实现自动保存 
+layout: post
+title: VisualStudio实现自动保存 
 categories: [VisualStudio]
 description: VisualStudio实现自动保存
 keywords: 开发, VisualStudio, Vs, 自动保存
