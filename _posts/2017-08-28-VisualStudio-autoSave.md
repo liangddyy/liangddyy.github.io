@@ -71,10 +71,10 @@ public class E : VisualCommanderExt.IExtension
     private EnvDTE.WindowEvents windowEvents;
     private Microsoft.VisualStudio.Shell.Interop.IVsStatusbar statusBar;
     
+    private EnvDTE80.DTE2 DTE;
     public void SetSite(EnvDTE80.DTE2 DTE_, Microsoft.VisualStudio.Shell.Package package)
     {
         DTE = DTE_;
-        System.Windows.Application.Current.Deactivated += OnDeactivated;
 
 	 events = DTE.Events;
 		windowEvents = events.WindowEvents;
@@ -87,19 +87,7 @@ public class E : VisualCommanderExt.IExtension
 
     public void Close()
     {
-        System.Windows.Application.Current.Deactivated -= OnDeactivated;
 	 windowEvents.WindowActivated -= OnWindowActivated;
-    }
-
-    private void OnDeactivated(object sender, System.EventArgs e)
-    {
-        try
-        {
-            DTE.ExecuteCommand("File.SaveAll");
-        }
-        catch (System.Exception ex)
-        {
-        }
     }
 
     private void OnWindowActivated(EnvDTE.Window gotFocus, EnvDTE.Window lostFocus)
@@ -112,7 +100,6 @@ public class E : VisualCommanderExt.IExtension
         {
         }
     }
-    private EnvDTE80.DTE2 DTE;
 }
 ```
 
