@@ -16,3 +16,41 @@ System.IO.Path
 Path.GetFileNameWithoutExtension()
 ```
 
+删除文件夹1
+
+```
+DirectoryInfo dir = new DirectoryInfo(Path.Combine(UnoPkgFloderPath, model.ID));
+dir.Delete(true);	// true 删除文件夹目录及其子目录
+```
+
+删除非空文件夹
+
+```
+Directory.Delete(path);
+```
+
+删除文件夹2
+
+```
+/// <summary>
+/// 删除文件夹（及文件夹下所有子文件夹和文件）
+/// </summary>
+/// <param name="directoryPath"></param>
+public static void DeleteFolder(string directoryPath)
+{
+    foreach (string d in Directory.GetFileSystemEntries(directoryPath))
+    {
+        if (File.Exists(d))
+        {
+            FileInfo fi = new FileInfo(d);
+            if (fi.Attributes.ToString().IndexOf("ReadOnly") != -1)
+                fi.Attributes = FileAttributes.Normal;
+            File.Delete(d); //删除文件   
+        }
+        else
+            DeleteFolder(d); //删除文件夹
+    }
+    Directory.Delete(directoryPath); //删除空文件夹
+}
+```
+
