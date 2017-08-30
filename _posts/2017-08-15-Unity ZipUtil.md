@@ -6,7 +6,7 @@ description:
 keywords: 开发, Unity
 ---
 
-压缩
+#### 压缩单个文件
 
 ```
 // 压缩文件
@@ -55,48 +55,129 @@ keywords: 开发, Unity
         }
 ```
 
-解压文件
+#### 压缩文件夹
 
 ```
-        // 解压文件
-        public static string DecompressZip(string filePath, string outFolder, string password = null)
+/// <summary>
+        /// 压缩多层目录 压缩文件夹
+        /// </summary>
+        /// <param name="dir">The directory.</param>
+        /// <param name="zipFilePath">The ziped file.</param>
+        public static void ZipDir(string dir, string zipFilePath)
+        {
+            using (System.IO.FileStream ZipFile = System.IO.File.Create(zipFilePath))
+            {
+                using (ZipOutputStream s = new ZipOutputStream(ZipFile))
+                {
+                    ZipDirDetail(dir, s, "");
+                }
+            }
+        }
+
+        /// <summary>
+        /// 递归遍历目录
+        /// </summary>
+        /// <param name="dir">The directory.</param>
+        /// <param name="outStream">The ZipOutputStream Object.</param>
+        /// <param name="parentPath">The parent path.</param>
+        private static void ZipDirDetail(string dir, ZipOutputStream outStream, string parentPath)
+        {
+            if (dir[dir.Length - 1] != Path.DirectorySeparatorChar)
+            {
+                dir += Path.DirectorySeparatorChar;
+            }
+            Crc32 crc = new Crc32();
+//            outStream.SetLevel(6); // 0 - store only to 9 - means best compression  
+            Encoding gbk = Encoding.GetEncoding("gbk"); // 防止中文名乱码  
+            ICSharpCode.SharpZipLib.Zip.ZipConstants.DefaultCodePage = gbk.CodePage;
+
+
+            string[] filenames = Directory.GetFileSystemEntries(dir);
+
+            foreach (string file in filenames) // 遍历所有的文件和目录
+            {
+                if (Directory.Exists(file)) // 先当作目录处理如果存在这个目录就递归Copy该目录下面的文件
+                {
+                    string pPath = parentPath;
+                    pPath += file.Substring(file.LastIndexOf("\\") + 1);
+                    pPath += "\\";
+                    ZipDirDetail(file, outStream, pPath);
+                }
+
+                else // 否则直接压缩文件
+                {
+                    //打开压缩文件
+                    using (FileStream fs = File.OpenRead(file))
+                    {
+                        byte[] buffer = new byte[fs.Length];
+                        fs.Read(buffer, 0, buffer.Length);
+
+                        string fileName = parentPath + file.Substring(file.LastIndexOf("\\") + 1);
+                        ZipEntry entry = new ZipEntry(fileName);
+
+                        entry.DateTime = DateTime.Now;
+                        entry.Size = fs.Length;
+
+                        fs.Close();
+
+                        crc.Reset();
+                        crc.Update(buffer);
+
+                        entry.Crc = crc.Value;
+                        outStream.PutNextEntry(entry);
+
+                        outStream.Write(buffer, 0, buffer.Length);
+                    }
+                }
+            }
+        }
+```
+
+#### 解压 文件
+
+```
+// 解压文件
+        public static bool DecompressZip(string filePath, string outFolder, string password = null)
         {
             if (string.IsNullOrEmpty(filePath) || File.Exists(filePath))
             {
-                return null;
+                return false;
             }
-            return DecompressZip(outFolder, File.OpenRead(filePath), password);
+            return DecompressZip(File.OpenRead(filePath), outFolder, password);
         }
 ```
 
-解压byte[]，可以下载完后WWW.bytes直接解压。不用再保存成文件。
+#### 解压 byte[]
+
+可以下载完后WWW.bytes直接解压。不用再保存成文件。
 
 ```
-        // 解压下载的byte[] 
-        public static string DecompressZip(string outFolder, byte[] ZipByte, string password)
+// 解压下载的byte[] 
+        public static bool DecompressZip(byte[] ZipByte, string outFolder, string password)
         {
-            return DecompressZip(outFolder, new MemoryStream(ZipByte), password);
+            return DecompressZip(new MemoryStream(ZipByte), outFolder, password);
         }
 ```
 
-解压部分 详细
+#### 解压 详细
 
 ```
-private static string DecompressZip(string outFolder, Stream stream, string password)
+private static bool DecompressZip(Stream stream, string outFolder, string password)
         {
+            bool result = false;
             string outPath = null;
             FileStream fs = null;
             ZipInputStream zipStream = null;
             ZipEntry ent = null;
             string fileName = null;
 
-            outFolder = Application.persistentDataPath + "/" + outFolder;
-
             if (!Directory.Exists(outFolder))
             {
                 Directory.CreateDirectory(outFolder);
             }
-
+            // 防止中文名乱码  !!!
+            Encoding gbk = Encoding.GetEncoding("gbk"); 
+            ICSharpCode.SharpZipLib.Zip.ZipConstants.DefaultCodePage = gbk.CodePage;
             try
             {
                 zipStream = new ZipInputStream(stream);
@@ -114,6 +195,7 @@ private static string DecompressZip(string outFolder, Stream stream, string pass
                         fileName = Path.Combine(outFolder, ent.Name);
 
                         #region Android
+
                         fileName = fileName.Replace('\\', '/');
 
                         if (fileName.EndsWith("/"))
@@ -121,10 +203,14 @@ private static string DecompressZip(string outFolder, Stream stream, string pass
                             Directory.CreateDirectory(fileName);
                             continue;
                         }
+
                         #endregion
 
+                        if (!Directory.Exists(Path.GetDirectoryName(fileName)))
+                        {
+                            Directory.CreateDirectory(Path.GetDirectoryName(fileName));
+                        }
                         fs = File.Create(fileName);
-
                         int size = 2048;
                         byte[] data = new byte[size];
 
@@ -142,12 +228,11 @@ private static string DecompressZip(string outFolder, Stream stream, string pass
                         }
                     }
                 }
-                outPath = fileName;
+                result = true;
             }
             catch (Exception e)
             {
                 Debug.Log(e.ToString());
-                outPath = null;
             }
             finally
             {
@@ -168,7 +253,7 @@ private static string DecompressZip(string outFolder, Stream stream, string pass
                 GC.Collect();
                 GC.Collect(1);
             }
-            return outPath;
+            return result;
         }
 ```
 

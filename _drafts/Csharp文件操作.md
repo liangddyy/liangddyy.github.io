@@ -14,6 +14,11 @@ System.IO.Path
 // 获取文件名（不带后缀）
 // 可用来获取目录名（剔除路径）
 Path.GetFileNameWithoutExtension()
+
+// 获取目录名
+Path.GetDirectoryName()
+如：Path.GetDirectoryName(C:/_workspaceC/develop0/EditorDemo/Assets) 
+返回：C:/_workspaceC/develop0/EditorDemo
 ```
 
 删除文件夹1
