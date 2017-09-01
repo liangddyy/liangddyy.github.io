@@ -23,6 +23,10 @@ TypeLoadException: Could not load type 'System.Runtime.Versioning.TargetFramewor
 
 GUID
 
+
+
+C:\Program Files\Unity5.4.3\Editor\Data\UnityExtensions\Unity
+
 参考：
 
 http://homans.nhlrebel.com/2014/12/09/unity-4-6-and-modules/
