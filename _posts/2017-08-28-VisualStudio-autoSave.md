@@ -104,4 +104,6 @@ public class E : VisualCommanderExt.IExtension
 }
 ```
 
+如果需要实现失去焦点或切换标签时都可以自动保存，将上面的两处脚本合并成一个，然后编译安装即可。
+
 参考：https://vlasovstudio.com/visual-commander/extensions.html#StatusBar
