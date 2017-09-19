@@ -18,7 +18,7 @@ permalink: /about/
 
 > 怎么联系?  
 
-[liangddyy#gmai.com](mailto:liangddyy@gmail.com)
+[liangddyy#gmail.com](mailto:liangddyy@gmail.com)
 
 ---
 
