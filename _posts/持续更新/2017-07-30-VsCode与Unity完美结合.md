@@ -3,7 +3,7 @@ layout: post
 title: Unity VsCode与Unity完美结合
 keywords: 
 description: ""
-category: [Unity, 长期更新]
+category: [Unity, 其他]
 tags: Unity VsCode
 ---
 
