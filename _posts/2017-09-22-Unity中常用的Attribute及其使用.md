@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Unity中自带的Attribute及其使用
+title:  Unity中常用的Attribute及其使用
 categories: [Unity]
 description: Unity中自带的Attribute及其使用
 keywords: Unity,  Attribute
@@ -57,7 +57,7 @@ public class ComponentMenuTest : MonoBehaviour {
 
 ##### 普通菜单项
 
-##### Project面板右键菜单示例
+##### Project面板右键菜单
 
 ```
 #region 右键菜单 导出资源包（选中资源时有效）
@@ -106,7 +106,9 @@ Debug.Log("Hierarchy右键菜单");
 }
 ```
 
-##### ContextMenu
+### Inspector面板
+
+#### ContextMenu
 
 可以在对应脚本的Inspector的中增加右键菜单选项。
 
@@ -118,7 +120,46 @@ void DoSomething()
 }
 ```
 
+#### ContextMenuItem
 
+在Inspector上面对变量追加一个右键菜单。
+
+```
+[ContextMenuItem("Reset", "ResetValue")]
+public string value = "Default";
+void ResetValue()
+{
+    value = "Default";
+}
+```
+
+#### Header
+
+在Inspector中变量的上面增加Header。
+
+```
+[Header("小标题")]
+```
+
+#### Space
+
+inspector面板上空一些位置。
+
+#### TextArea
+
+该属性可以把string在Inspector上的编辑区变成一个TextArea。
+
+#### Tooltip
+
+当鼠标指针移动到Inspector上时候显示。
+
+#### HideInInspector
+
+在Inspector上隐藏public变量。
+
+#### RangeAttribute
+
+在int或者float类型上使用，限制输入值的范围
 
 ### 初始化
 
@@ -141,7 +182,7 @@ public class ScriptExecuteOrderSetting
 
 在Method上使用，是InitializeOnLoad的Method版本。Method必须是static的。
 
-### Editor回调相关
+### Editor回调
 
 以下三个Callback的属性，都需要方法为static。
 
@@ -177,6 +218,26 @@ public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProj
 
 ### 其他
 
+#### UnityAPICompatibilityVersion
+
+用来声明API的版本兼容性
+
+#### SerializeField
+
+强制序列化属性。
+
+#### RequireComponent
+
+当该Class被添加到一个GameObject上的时候，如果这个GameObject不含有依赖的Component，会自动添加该Component，且不可移除。
+
+```
+当该Class被添加到一个GameObject上的时候，如果这个GameObject不含有依赖的Component，会自动添加该Component。
+```
+
 #### RPC
 
 在方法上添加该属性，可以网络通信中对该方法进行RPC调用。
+
+#### DisallowMultipleComponent
+
+继承MonoBehavior的类，在同一个GameObject上面，最多只能添加一个该类的实例。
