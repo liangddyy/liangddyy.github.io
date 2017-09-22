@@ -8,6 +8,10 @@ keywords: something一些
 
 一些记录
 
+> 工具
+
+[Resharper的使用](http://www.cnblogs.com/luminji/p/3285505.html)
+
 >Shell
 
 [Windows批处理(cmd/bat)语法](https://www.zybuluo.com/yangfch3/note/338252)
@@ -19,7 +23,6 @@ keywords: something一些
 
 >Unity3D  
 
-[NGUI中文文档及示例][3]  
 [SIKI收藏的10几款Unity商业游戏项目源码][4]  
 [Unity 导出切片精灵][5]  
 [Unity5手册中文翻译速查](http://docs.manew.com/)  
@@ -31,9 +34,9 @@ keywords: something一些
 >Python  
 
 [Python菜鸟教程][6]  
+
 >其它  
 
-[多说评论框各种CSS自定义设置问题收集](http://shenchaofei.cn/duoshuo-comment-box-css-custom/328.html)  
 [80端口被Microsoft-HTTPAPI/2.0占用怎么解决？](http://jingyan.baidu.com/article/3aed632e0297e37011809151.html)  
 [开放静态文件 CDN](http://staticfile.org/)  
 [typecho1.0 markdown新窗口打开][7]  
