@@ -184,7 +184,11 @@ public class ScriptExecuteOrderSetting
 
 ### Editor回调
 
-以下三个Callback的属性，都需要方法为static。
+Callback的属性，都需要方法为static。
+
+#### DidReloadScripts
+
+继承自CallbackOrderAttribute。脚本重新加载后，回调该方法。
 
 #### OnOpenAsset
 
