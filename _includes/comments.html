@@ -1,11 +1,9 @@
 {% if page.comments != false %}
-
+  </br>
+  <p></p>
   {% if site.comments_provider != 'disqus' and site.lazy_load_disqus and site.disqus and site.disqus.username %}
     <!-- <h1></h1> -->
     <!-- <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a> -->
-    </br>
-    </br>
-    <p></p>
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
@@ -43,13 +41,6 @@
     {% when 'disqus' %}
       {% if site.disqus and site.disqus.username %}
         {% assign load_disqus = true %}
-        <!-- Disqus Protection, see https://github.com/mzlogin/mzlogin.github.io/issues/2 -->
-        <!-- {% if site.disqus.username == 'mzlogin' %}
-          {% assign load_disqus = false %}
-          {% if site.url contains 'mazhuang.org' %}
-            {% assign load_disqus = true %}
-          {% endif %}
-        {% endif %} -->
         {% if load_disqus %}
           <div id="disqus_thread"></div>
           <script>
