@@ -25,7 +25,7 @@ keywords: 开发,
 </ivy-module>
 ```
 
-其中：version、unityVersion均为当前Unity的版本号；artifact name 标签为我们的DLL文件的相对路径。这两项是需要我们修改的。
+其中：version、unityVersion均为当前Unity的版本号；artifact name 标签为我们的DLL文件的相对路径。这两项是需要我们修改的(在Step3)。
 
 ### Step2. 生成dll
 
@@ -45,11 +45,9 @@ TypeLoadException: Could not load type 'System.Runtime.Versioning.TargetFramewor
 
 ![添加引用](\Img\Unity\Editor\module\添加引用.png)
 
-这两个引用在`Unity5.4.3\Editor\Data\Managed\` 目录下。
+这两个引用在`Unity5.4.3\Editor\Data\Managed\` 目录下，当然，也可以引用其他的dll文件。
 
-> 如果有引用其他dll库，也需要一并复制进来。Unity已有的库则不用再拷贝。
-
-将Unity插件VsCode的脚本拷贝到这个项目中，并生成一下解决方案，可以生成需要的dll了。
+将Unity插件VsCode的脚本拷贝到这个项目中，并生成一下解决方案，可以得到我们需要的dll了。
 
 ![生成dll](\Img\Unity\Editor\module\生成dll.png)
 
@@ -58,6 +56,8 @@ TypeLoadException: Could not load type 'System.Runtime.Versioning.TargetFramewor
 从Unity自带的模块中拷贝一份 ivy.xml 文件放置好。VSCodeModule文件夹下ivy.xml文件、并且将生成的
 
 VSCodeModule.dll、VSCodeModule.pdb 文件放置到Editor下（如果是非Editor脚本则放在根目录）。
+
+> 这里除了要拷贝主要的VSVSCodeModule.dll，如果有引用其他dll库，也需要一并复制进来。Unity已有的库则不用再拷贝（如UnityEditor.dll...等）。
 
 ![結構](\Img\Unity\Editor\module\結構.png)
 
