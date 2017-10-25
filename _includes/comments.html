@@ -1,9 +1,9 @@
 {% if page.comments != false %}
-  </br>
-  <p></p>
+  <!-- </br>
+  <p></p> -->
   {% if site.comments_provider != 'disqus' and site.lazy_load_disqus and site.disqus and site.disqus.username %}
-    <!-- <h1></h1> -->
-    <!-- <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a> -->
+    <h1></h1>
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
