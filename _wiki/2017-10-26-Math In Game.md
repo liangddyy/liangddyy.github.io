@@ -12,6 +12,8 @@ keywords: 开发, 算法
 
 [Unity中的曲线插值CatmullRom](http://539go.com/2017/08/17/%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3-Unity%E4%B8%AD%E7%9A%84%E6%9B%B2%E7%BA%BF%E6%8F%92%E5%80%BC/)
 
+### A*
+
 #### 贝塞尔曲线
 
 ````
