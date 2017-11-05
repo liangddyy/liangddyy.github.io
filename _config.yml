@@ -29,23 +29,22 @@ email: liangddyy@gmail.com
 navs:
   -
     href: /
-    label: 首页
+    label: Home
 
   -
     href: /categories/
-    label: 分类
+    label: categories
 
   -
     href: /wiki/
-    label: 维基
-
-  -
-    href: /links/
-    label: 链接
+    label: wiki
 
   -
     href: /about/
-    label: 关于
+    label: about
+    #   -
+#     href: /links/
+#     label: 链接
 
 # ---------------- #
 #       RSS        #
@@ -62,7 +61,6 @@ highlighter: rouge
 paginate: 8
 lsi: false
 quiet: false
-featured-tags: true                     # whether or not using Feature-Tags
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
 gems:
