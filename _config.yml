@@ -62,6 +62,7 @@ highlighter: rouge
 paginate: 8
 lsi: false
 quiet: false
+featured-tags: true                     # whether or not using Feature-Tags
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
 gems:
