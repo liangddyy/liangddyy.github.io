@@ -67,8 +67,8 @@
       {% endif %}
     {% when 'gitment' %}
         <div id="container"></div>
-        <link rel="stylesheet" href="{{ site.url }}/gitment/style/default.css">
-        <script src="{{ site.url }}/gitment/dist/gitment.browser.js"></script>
+        <link rel="stylesheet" href="{{ site.assetsurl }}/assets/gitment/style/default.css">
+        <script src="{{ site.assetsurl }}/assets/gitment/dist/gitment.browser.js"></script>
         <script>
         var gitment = new Gitment({
             id: '{{ page.url }}',
