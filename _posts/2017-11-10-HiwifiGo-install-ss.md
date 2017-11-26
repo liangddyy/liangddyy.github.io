@@ -6,8 +6,6 @@ description:  极路由Go免Root安装Shadowsocks插件
 keywords:  
 ---
 
-[](http://539go.com/2016/01/20/%E6%90%AD%E5%BB%BA%E5%B8%A6%E6%B5%81%E9%87%8F%E9%99%90%E5%88%B6%E7%9A%84shadowsocks/)
-
 以前在这篇文章[搭建带流量限制的shadowsocks](http://539go.com/2016/01/20/%E6%90%AD%E5%BB%BA%E5%B8%A6%E6%B5%81%E9%87%8F%E9%99%90%E5%88%B6%E7%9A%84shadowsocks/) 的末尾提过在极路由上装shadowsocks插件，由于需要root极路由，申请开发者权限，不仅流程麻烦，而且会失去保修，非常不便。
 
 后面又入了个极路由Go，下面说下怎么在极路由Go（其他极路由设备也可以）上免root安装ss插件。
