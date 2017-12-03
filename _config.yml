@@ -4,7 +4,7 @@
 baseurl:
 url: https://539go.com
 # 资源地址默认和url相同
-assetsurl: https://539go.com
+assetsurl: https://assets.539go.com
 date_format: "ordinal"
 title: 梁先生's blog
 subtitle: "Simple philosophy,梁先生's blog"
