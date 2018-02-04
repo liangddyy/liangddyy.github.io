@@ -167,11 +167,55 @@ private static void Paste()
             break;
     }
 }
+
+
+public static void CopyListFileInEditor(List<string> sourcePaths, string targetPath)
+{
+    bool isAuto = EditorPrefs.GetBool(KeyAutoRefresh, true);
+    if (isAuto) EditorPrefs.SetBool(KeyAutoRefresh, false);
+    foreach (var path in sourcePaths)
+    {
+        string destName = Path.Combine(targetPath, Path.GetFileName(path));
+        if (File.Exists(path))
+        {
+            File.Copy(path, destName);
+        }
+        else
+        {
+            CopyDir(path, destName);
+        }
+    }
+    if (isAuto) EditorPrefs.SetBool(KeyAutoRefresh, true);
+    AssetDatabase.Refresh();
+}
+
+public static void CopyDir(string sourcePath, string destinationPath)
+{
+    DirectoryInfo info = new DirectoryInfo(sourcePath);
+    if (!Directory.Exists(destinationPath))
+        Directory.CreateDirectory(destinationPath);
+    foreach (FileSystemInfo fsi in info.GetFileSystemInfos())
+    {
+        string destName = Path.Combine(destinationPath, fsi.Name);
+
+        if (fsi is FileInfo)
+        {
+            File.Copy(fsi.FullName, destName);
+        }
+        else
+        {
+            Directory.CreateDirectory(destName);
+            CopyDir(fsi.FullName, destName);
+        }
+    }
+}
 ```
+
+需要注意的是，在编辑器里直接通过脚本粘贴之前，需要禁用掉Unity的自动刷新，否则可能没复制完线程便中断了。Unity设置里的自动刷新配置保存在 EditorPrefs，Key：kAutoRefresh。
 
 ---
 
-以上的代码并不完整，另外还有一些细节，比如导入包时 可以导入到所选择的Assets文件夹等一些细节上的没贴出来。代码在这里 [QuickCopy.cs](https://github.com/liangddyy/UnityClipboard/blob/master/UnityQuickCopyModule/UnityQuickCopyModule/QuickCopy.cs) ，直接放到项目中Editor文件夹下就能用。
+以上的代码并不完整，另外还有一些细节，比如导入包时 可以导入指定Assets目录等一些细节上的没贴出来。代码在这里 [QuickCopy.cs](https://github.com/liangddyy/UnityClipboard/blob/master/UnityQuickCopyModule/UnityQuickCopyModule/QuickCopy.cs) ，直接放到项目中Editor文件夹下就能用。
 
 ## 无关紧要的部分
 
