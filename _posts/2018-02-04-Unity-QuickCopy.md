@@ -69,7 +69,9 @@ private static void CopyToClipboard()
 
 虽然可以通过powershell可以加入文件列表到剪切板， 但是没发现通过powershell粘贴，这边比较坑爹。不过可以通过代码获取到复制的文本:
 
-```GUIUtility.systemCopyBuffer```
+```
+GUIUtility.systemCopyBuffer
+```
 
 所以采取的办法是，如果在编辑器间复制，把文件列表路径，存起来序列化后复制到文本，然后粘贴时读取系统的剪切板 然后解析下路径列表，再通过C#执行复制粘贴擦操作。
 
