@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UnityEditor 编辑器间快速复制粘贴
-categories: [Unity, Unity编辑器]
+categories: [Unity]
 description: UnityEditor 编辑器间快速复制粘贴
 keywords: Unity,UnityEditor,Unity编辑器开发 
 ---
