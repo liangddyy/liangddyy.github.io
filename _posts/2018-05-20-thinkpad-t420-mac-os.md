@@ -66,7 +66,7 @@ BIOS：从ThinkPad官网下载了最新的，貌似是1.5X（网上说用1.4x �
 
 用到的资料截个图（这篇文章在windows上写的，新装的mac还在升级10.11版本）
 
-![t420_mac_os](Img/Other/OS/t420_mac_os.png)
+![t420_mac_os](http://539go.com/Img/Other/OS/t420_mac_os.png)
 
 ## 关于升级
 
