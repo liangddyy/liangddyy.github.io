@@ -5,9 +5,8 @@
 
 # Site
 title: 梁先生的 blog
-subtitle:
-description:
-author: John Doe
+subtitle: description:记录一些开发笔记、日常等
+author: liangddyy
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-hk
 date_format: '%Y-%m-%d'
@@ -79,7 +78,7 @@ plugins:
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "liangddyy, 梁先生的博客"
+keywords: "liangddyy, 梁先生的博客,Unity, Android, Python, 编程, 勿语, 梁先生的博客,博客，游戏开发,软件分享"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
