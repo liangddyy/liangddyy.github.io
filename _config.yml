@@ -626,8 +626,8 @@ canvas_ribbon: false
 # Be aware that you should use the same version as internal ones to avoid potential problems.
 # Please use the https protocol of CDN files when you enable https on your site.
 vendors:
-  # Internal path prefix. Please do not edit it. // assets/lib
-  _internal: https://assets.539go.com/lib
+  # Internal path prefix. Please do not edit it. // https://assets.539go.com/lib
+  _internal: assets/lib
 
   # Internal version: 2.1.3
   jquery:
@@ -705,10 +705,10 @@ vendors:
 # Assets
 # css: assets/css
 # js: assets/js
-# images: assets/images
+# images: https://assets.539go.com/images
 css: assets/css
-js: https://assets.539go.com/js
-images: https://assets.539go.com/images
+js: assets/js
+images: assets/images
 
 # Theme version
 version: 5.1.1
