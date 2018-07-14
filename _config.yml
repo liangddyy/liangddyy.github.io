@@ -703,9 +703,12 @@ vendors:
 
 
 # Assets
-css: assets/css
-js: assets/js
-images: assets/images
+# css: assets/css
+# js: assets/js
+# images: assets/images
+css: https://assets.539go.com/css
+js: https://assets.539go.com/js
+images: https://assets.539go.com/images
 
 # Theme version
 version: 5.1.1
