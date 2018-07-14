@@ -706,7 +706,7 @@ vendors:
 # css: assets/css
 # js: assets/js
 # images: assets/images
-css: https://assets.539go.com/css
+css: assets/css
 js: https://assets.539go.com/js
 images: https://assets.539go.com/images
 
