@@ -5,10 +5,10 @@
 
 # Site
 title: 梁先生的 blog
-subtitle: description:记录一些开发笔记、日常等
+subtitle: Simple philosophy,梁先生的 blog
 author: liangddyy
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: zh-hk
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
@@ -303,8 +303,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 220
 
 # Post meta display settings
 post_meta:
@@ -626,8 +626,8 @@ canvas_ribbon: false
 # Be aware that you should use the same version as internal ones to avoid potential problems.
 # Please use the https protocol of CDN files when you enable https on your site.
 vendors:
-  # Internal path prefix. Please do not edit it.
-  _internal: assets/lib
+  # Internal path prefix. Please do not edit it. // assets/lib
+  _internal: https://assets.539go.com/lib
 
   # Internal version: 2.1.3
   jquery:
