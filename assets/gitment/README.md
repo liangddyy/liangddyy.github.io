@@ -283,7 +283,7 @@ If you find a way to hack it, please [open an issue](https://github.com/imsun/gi
 
 ### Why does Gitment send a request to gh-oauth.imsun.net?
 
-[https://gh-oauth.imsun.net](https://gh-oauth.imsun.net) is an simple open-source service to proxy [one request](https://developer.github.com/v3/oauth/#2-github-redirects-back-to-your-site) during users logging in.
+[https://github.com/login/oauth/access_token](https://github.com/login/oauth/access_token) is an simple open-source service to proxy [one request](https://developer.github.com/v3/oauth/#2-github-redirects-back-to-your-site) during users logging in.
 Because GitHub does't attach a CORS header to it.
 
 This service won't record or store anything, only proxy and attach a CORS header to that request.
