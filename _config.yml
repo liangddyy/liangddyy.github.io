@@ -98,8 +98,8 @@ gitment:
     owner: liangddyy
     repo: liangddyy.github.io
     oauth:
-        client_id: 2467be91d44574a757e2
-        client_secret: 8447efe36c6374954def07d3d037fc86fd4fc70a
+        client_id: b7613820ffb01a4f67de
+        client_secret: 06cdb25193a18aed6acd864fcb1049eac1af2d54
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
