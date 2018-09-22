@@ -86,7 +86,7 @@ repository: liangddyy/liangddyy.github.io
 # ---------------- #
 # support provider: disqus, gitment, other
 # other 有言评论(已弃用)
-comments_provider: gitment
+comments_provider: other
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com

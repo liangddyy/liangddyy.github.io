@@ -79,7 +79,20 @@ load_disqus = true %} {% if load_disqus %}
   gitment.render('container')
 </script> {% when 'other' %}
 <!-- comments -->
+<div id="vcomments"></div>
+<script>
+new Valine({
+    el: '#vcomments' ,
+    appId: 'q5u4q5MNog6veHy5xVWpoALS-gzGzoHsz',
+    appKey: 'P872H4Qc74Ilq84xwwToTRRr',
+    notify:false, 
+    verify:false, 
+    avatar:'mm', 
+    placeholder: 'just go go' 
+});
+</script>
 <!-- 来必力City版安装代码 -->
+<!--
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDAyNS8xMDU2Mw==">
   <script type="text/javascript">
       (function (d, s) {
@@ -96,5 +109,6 @@ load_disqus = true %} {% if load_disqus %}
   </script>
   <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
+-->
 <!-- City版安装代码已完成 -->
 {% endcase %} {% endif %}
