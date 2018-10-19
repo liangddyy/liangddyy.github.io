@@ -3,10 +3,10 @@ layout: post
 title: Unity 中lock使用不当导致Unity卡死
 categories: [Unity, C#]
 description: Unity 中lock使用不当导致Unity卡死
-keywords: Unity, lock锁死
+keywords: Unity, lock死锁, C#
 ---
 
-早上遇到个问题，多个文件同时下载失败时，导致 Unity 卡死。后面才发现是 线程锁使用不当的原因。
+早上遇到个问题，多个文件同时下载失败时，导致 Unity 卡死。后面才发现是 线程锁使用不当的原因，造成了死锁。
 
 代码里下载的逻辑是 当前文件下载失败后（回调 error_callback_）（如下面的简要代码），在 error_callback_ 里 查找是否还有待下载的文件；如果有，查找是否有空闲的下载器；如果有，初始化下载，执行start()
 
