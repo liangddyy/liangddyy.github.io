@@ -12,11 +12,17 @@ permalink: /about/
 
 [rss订阅](http://539go.com/feed.xml)
 
-闲的时候随便写写，若需要联系，请用email。
+---
 
-> about me
 
-a gamer.
+
+不敢停下学习的脚步，惶恐被时代落下。
+
+
+
+---
+
+
 
 > contact?  
 
