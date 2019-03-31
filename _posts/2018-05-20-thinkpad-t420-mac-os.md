@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ThinkPadT420 安装黑苹果小记
-categories: [OS, 瞎折腾]
+categories: [瞎折腾]
 description: ThinkPadT420 安装黑苹果小记
 keywords: MacOS, 黑苹果
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unity 微信支付和分享接入的一些流程和问题(Android)
-categories: [Unity, SDK]
+categories: [Unity]
 description: 微信支付接入
 keywords: Unity,Android,SDK
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于写博客
-categories: [Other]
+categories: [其他]
 description: 关于写博客
 keywords: 生活,其他，博客
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 极路由Go免Root安装Shadowsocks插件
-categories: [Other]
+categories: [其他]
 description:  极路由Go免Root安装Shadowsocks插件
 keywords:  
 ---

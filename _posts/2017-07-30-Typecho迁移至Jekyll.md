@@ -3,7 +3,7 @@ layout: post
 title: "Typecho迁移至Jekyll"
 keywords: 
 description: ""
-category: Typecho
+category: 其他
 tags: Typecho Jekyll
 ---
 
