@@ -2,8 +2,8 @@
 layout: post
 title: template page
 categories: [cate1, cate2]
-description: 
-keywords: 
+description: some word here
+keywords: keyword1, keyword2
 ---
 
 Content here

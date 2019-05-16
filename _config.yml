@@ -8,8 +8,8 @@ assetsurl: https://assets.539go.com
 date_format: "ordinal"
 title: 梁先生的 blog
 subtitle: "Simple philosophy,梁先生的 blog"
-description: "记录一些开发笔记、日常等"
-keywords: Unity, Android, Python, 编程, 勿语, 梁先生的博客,博客，游戏开发,软件分享
+description: " "
+keywords: Unity, Android, Python,编程, 梁先生的博客,游戏开发,软件分享
 favicon: /favicon.ico
 timezone: Test
 encoding: "utf-8"
@@ -20,9 +20,9 @@ side_bar_repo_limit: 5
 # ---------------- #
 author: Liangddyy
 organization: 。
-organization_url: 。
+organization_url: 
 github_username: liangddyy
-location: Fuzhou, China
+location: Chengdu,China
 email: liangddyy@gmail.com
 
 # ---------------- #
@@ -37,9 +37,9 @@ navs:
     href: /categories/
     label: categories
 
-  -
-    href: /wiki/
-    label: wiki
+  # -
+  #   href: /wiki/
+  #   label: wiki
 
   -
     href: /about/
