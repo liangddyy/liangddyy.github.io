@@ -68,3 +68,11 @@ T_T变细变矮了~
 
 
 最后，`GC.ReRegisterForFinalize` 该方法请慎用，小心造成内存泄漏。
+
+
+
+附上老东家那边同事给的参考链接~
+
+https://stackoverflow.com/questions/22155347/in-c-sharp-can-i-stop-an-object-from-being-garbage-collected-from-the-finalizer?tdsourcetag=s_pctim_aiomsg
+
+https://stackoverflow.com/questions/3680281/usages-of-object-resurrection
