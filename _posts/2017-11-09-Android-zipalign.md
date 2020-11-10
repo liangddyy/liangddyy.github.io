@@ -31,3 +31,4 @@ Zipalign优化：
 ```
 C:\_File\SDK\build-tools\27.0.1\zipalign -v 4 input.apk output.apk
 ```
+

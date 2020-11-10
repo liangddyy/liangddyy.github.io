@@ -6,9 +6,7 @@ description: Unity自动化打包
 keywords: 
 ---
 
-代码有空再整理
-
-## 安装Java
+## Java
 
 [Java SE Development Kit 8 Downloads](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
@@ -71,7 +69,7 @@ builds/${BUILD_NUMBER}/*.xml,builds/${BUILD_NUMBER}/*.zip,builds/${BUILD_NUMBER}
 Unity命令行示例
 
 ```jsx
--quit  -batchmode  -projectPath  "${WORKSPACE}" -buildTarget ${platform} -executeMethod  GameBear.SmartBuild.Internal.SmartBuilderJenkins.Build -logFile "${WORKSPACE}/builds/${BUILD_NUMBER}/unity3d_defineSymbols.log"  -silent-crashes -bbBuildPath "${WORKSPACE}/builds/${BUILD_NUMBER}" -bbVersion ${version} -bbDevelopment ${development} -bbBundleIdentifier ${bundleIdentifier} -bbGenerateBundle ${generateBundle} -bbKeystoreName android_release.keystore -bbKeystorePass 123456 -bbIsSplit ${isObb} -bbIsBuildBundle ${isBuildBundle} -bbBundleVersion ${bundleVersion} -bbProductName ${productName} -bbDisableGm ${disableGm} -bbUsePdxLogin ${usePdxLogin} -bbEnableTuto ${enableTuto} -bbAutoLogin ${autoLogin} -bbPingServer ${pingServer} -bbEnableMusic ${enableMusic}
+-quit  -batchmode  -projectPath  "${WORKSPACE}" -buildTarget ${platform} -executeMethod  GameBear.SmartBuild.Internal.SmartBuilderJenkins.Build -logFile "${WORKSPACE}/builds/${BUILD_NUMBER}/unity3d_defineSymbols.log"  -silent-crashes -bbBuildPath "${WORKSPACE}/builds/${BUILD_NUMBER}" -bbVersion ${version} -bbDevelopment ${development} -bbGenerateBundle ${generateBundle} -bbKeystoreName android_release.keystore -bbKeystorePass 123456 -bbIsSplit ${isObb} -bbIsBuildBundle ${isBuildBundle} -bbBundleVersion ${bundleVersion} -bbDisableGm ${disableGm} -bbEnableTuto ${enableTuto} -bbAutoLogin ${autoLogin} -bbPingServer ${pingServer} -bbEnableMusic ${enableMusic} -bbConfigName ${configName} -bbCdnType ${cdnType} cat unity.log | grep error
 ```
 
 自动删除旧的归档文件
