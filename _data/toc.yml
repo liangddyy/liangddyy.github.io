@@ -1,0 +1,33 @@
+- title: "😀 游戏相关"
+  url: "categories"
+  children:
+    - title: Unity
+      url: "categories#Unity"
+    - title: "算法"
+      url: "categories#算法"
+    - title: C#
+      url: "categories#C#"
+
+- title: "😎 移动开发"
+  url: "categories"
+  children:
+    - title: "Android"
+      url: "categories#Android"
+    - title: "IOS"
+      url: "categories#IOS"
+    
+- title: "😦 Archive"
+  url: "archive"
+- title: "🥱 About"
+  url: "about"
+
+  # - title: "Example"
+#   url: "docs/extras"
+#   children:
+#     - title: Quizzes
+#       url: "docs/extras/example-quiz"
+#     - title: Discussion Forum
+#       url: "forum"
+#     - title: Interactive Code
+#       url: "docs/extras/interactive"
+

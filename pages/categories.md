@@ -1,25 +1,33 @@
 ---
-layout: categories
-title: Categories
-description: 分类
-keywords: 分类
-comments: false
-menu: 分类
+title: categories
 permalink: /categories/
 ---
 
-<section class="container posts-content">
+# 文章归类
+
+some tags
+<div>
+{% for tag in site.tags %}
+    {% for post in tag.last %}
+      <span class="badge badge-success"><a style="cursor:pointer; color:white" href="/tags/#{{ tag | first }}">{{ tag | first }}</a></span>
+    {% endfor %}
+{% endfor %}
+
+</div>
+<!-- {{ category | last | size }} 类别数量 -->
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
-<h3>{{ category | first }}</h3>
-<ol class="posts-list" id="{{ category[0] }}">
-{% for post in category.last %}
-<li class="posts-list-item">
-<span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
-<a class="posts-list-name" href="{{ post.url }}">{{ post.title }}</a>
-</li>
+<!-- 添加ID 方便跳转 -->
+<h2 id="{{ category | first }}">{{ category | first }}</h2>
+<ul class="c-archives__list">
+    {% for post in category.last %}
+        <li class="c-archives__item">
+          {{ post.date | date: "%b %-d, %Y" }}: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
 {% endfor %}
-</ol>
-{% endfor %}
-</section>
-<!-- /section.content -->
+
+
+
+
