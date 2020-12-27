@@ -5,6 +5,8 @@ permalink: /archive/
 ---
 # 时间线
 
+want to categories? [categories](/categories)
+
 {% assign all_posts = "" | split: "" %}
 {% for article in site.docs %}
     {% assign all_posts = all_posts | push: article %}
