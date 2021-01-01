@@ -3,17 +3,8 @@ title: categories
 permalink: /categories/
 ---
 
-# 文章归类
+# 类别索引
 
-some tags
-<div>
-{% for tag in site.tags %}
-    {% for post in tag.last %}
-      <span class="badge badge-success"><a style="cursor:pointer; color:white" href="/tags/#{{ tag | first }}">{{ tag | first }}</a></span>
-    {% endfor %}
-{% endfor %}
-
-</div>
 <!-- {{ category | last | size }} 类别数量 -->
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
@@ -27,6 +18,16 @@ some tags
     {% endfor %}
 </ul>
 {% endfor %}
+
+
+# some tags
+<div>
+{% for tag in site.tags %}
+    {% for post in tag.last %}
+      <span class="badge badge-success"><a style="cursor:pointer; color:white" href="/tags/#{{ tag | first }}">{{ tag | first }}</a></span>
+    {% endfor %}
+{% endfor %}
+</div>
 
 
 

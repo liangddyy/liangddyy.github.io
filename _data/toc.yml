@@ -1,5 +1,5 @@
 - title: "😀 游戏相关"
-  url: "categories"
+  url: "categories#Unity"
   children:
     - title: Unity
       url: "categories#Unity"
@@ -9,31 +9,22 @@
       url: "categories#C#"
 
 - title: "😎 移动开发"
-  url: "categories"
+  url: "categories#Android"
   children:
     - title: "Android"
       url: "categories#Android"
     - title: "IOS"
       url: "categories#IOS"
 
-- title: Library
+- title: 😱 Library
   url: "docs"
   children:
     - title: 编码规范
       url: "docs/study/编码规范"
+    - title: 正则查询
+      url: "docs/正则查询"
 
 - title: "Archive"
   url: "archive"
 - title: "About"
   url: "about"
-
-  # - title: "Example"
-#   url: "docs/extras"
-#   children:
-#     - title: Quizzes
-#       url: "docs/extras/example-quiz"
-#     - title: Discussion Forum
-#       url: "forum"
-#     - title: Interactive Code
-#       url: "docs/extras/interactive"
-
