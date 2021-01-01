@@ -15,10 +15,16 @@
       url: "categories#Android"
     - title: "IOS"
       url: "categories#IOS"
-    
-- title: "😦 Archive"
+
+- title: Library
+  url: "docs"
+  children:
+    - title: 编码规范
+      url: "docs/study/编码规范"
+
+- title: "Archive"
   url: "archive"
-- title: "🥱 About"
+- title: "About"
   url: "about"
 
   # - title: "Example"

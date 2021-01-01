@@ -7,9 +7,6 @@ permalink: /
 # Welcome to my blog
 
 {% assign all_posts = "" | split: "" %}
-{% for article in site.docs %}
-    {% assign all_posts = all_posts | push: article %}
-{% endfor %}
 {% for post in site.posts %}
     {% assign all_posts = all_posts | push: post %}
 {% endfor %}

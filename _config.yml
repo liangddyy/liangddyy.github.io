@@ -94,25 +94,21 @@ defaults:
       type: "docs"
     values:
       layout: page
-# # 子目录Unity
-#   - scope:
-#       path: "_docs/unity"
-#       type: "unity"
-#     values:
-#       layout: page
-# # 子目录Math
-#   - scope:
-#       path: "_docs/math"
-#       type: "math"
-#     values:
-#       layout: page
-  - scope:
+  # - 
+  #   scope:
+  #     path: "_wiki"
+  #     type: "wiki"
+  #   values:
+  #     layout: page
+  - 
+    scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
 # post文章
-  - scope:
+  - 
+    scope:
       path: "posts"
       type: "posts"
     values:

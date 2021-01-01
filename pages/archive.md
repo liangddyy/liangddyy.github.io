@@ -8,9 +8,9 @@ permalink: /archive/
 want to categories? [categories](/categories)
 
 {% assign all_posts = "" | split: "" %}
-{% for article in site.docs %}
+<!-- {% for article in site.docs %}
     {% assign all_posts = all_posts | push: article %}
-{% endfor %}
+{% endfor %} -->
 {% for post in site.posts %}
     {% assign all_posts = all_posts | push: post %}
 {% endfor %}
@@ -18,7 +18,7 @@ want to categories? [categories](/categories)
 <!-- site.posts 仅输入post下的文章, all_posts 全部文章 -->
 {% for post in all_posts  %}{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-{% if forloop.first %}<h2 class="c-archives__year" id="{{ this_year }}-ref">{{this_year}}</h2>
+{% if forloop.first %}<h2 class="c-archives__year" id="{{ this_year }}-ref">{{this_year}} </h2>
 <ul class="c-archives__list">{% endif %}
 <li class="c-archives__item">
   {{ post.date | date: "%b %-d, %Y" }}: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
