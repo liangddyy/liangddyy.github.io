@@ -8,9 +8,9 @@ permalink: /archive/
 want to categories? [categories](/categories)
 
 {% assign all_posts = "" | split: "" %}
-<!-- {% for article in site.docs %}
+{% for article in site.docs %}
     {% assign all_posts = all_posts | push: article %}
-{% endfor %} -->
+{% endfor %}
 {% for post in site.posts %}
     {% assign all_posts = all_posts | push: post %}
 {% endfor %}

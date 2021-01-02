@@ -19,6 +19,8 @@
 - title: 😱 Library
   url: "docs"
   children:
+    - title: ECS学习参考
+      url: "docs/study/ECS学习"
     - title: 编码规范
       url: "docs/study/编码规范"
     - title: 正则查询
