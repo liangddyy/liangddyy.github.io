@@ -7,7 +7,6 @@
 #       url: "categories#算法"
 #     - title: C#
 #       url: "categories#C#"
-
 # - title: "😎 移动开发"
 #   url: "categories#Android"
 #   children:
@@ -15,17 +14,19 @@
 #       url: "categories#Android"
 #     - title: "IOS"
 #       url: "categories#IOS"
-
-- title: 😱 Library
-  url: "notes"
-  children:
-    - title: ECS学习参考
-      url: "notes/study/ECS学习"
-    - title: 编码规范
-      url: "notes/study/编码规范"
-    - title: 正则查询
-      url: "notes/正则查询"
-
+# - title: 😱 Library
+#   url: "docs"
+#   children:
+#     - title: ECS学习参考
+#       url: "docs/study/ECS学习"
+#     - title: 编码规范
+#       url: "docs/study/编码规范"
+#     - title: 正则查询
+#       url: "docs/正则查询"
+- title: "一些笔记"
+  url: "docs"
+- title: "Categories"
+  url: "categories"
 - title: "Archive"
   url: "archive"
 - title: "About"
