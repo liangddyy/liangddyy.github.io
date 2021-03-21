@@ -90,8 +90,8 @@ collections:
 defaults:
 # 笔记主目录
   - scope:
-      path: "_docs"
-      type: "docs"
+      path: "_notes"
+      type: "notes"
     values:
       layout: page
   # - 
