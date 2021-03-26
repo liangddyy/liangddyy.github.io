@@ -59,7 +59,7 @@ tag_color: success # danger, success, warning, primary, info, secondary
 # support provider: disqus, gitment, other
 # other 有言评论(已弃用)
 # page.html 取消注释代码即可使用
-comments_provider: disqus
+comments_provider: gitment
 # https://disqus.com
 disqus:
     username: liangdy
@@ -90,25 +90,12 @@ collections:
 defaults:
 # 笔记主目录
   - scope:
-      path: "_notes"
-      type: "notes"
-    values:
-      layout: page
-  # - 
-  #   scope:
-  #     path: "_wiki"
-  #     type: "wiki"
-  #   values:
-  #     layout: page
-  - 
-    scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
 # post文章
-  - 
-    scope:
+  - scope:
       path: "posts"
       type: "posts"
     values:

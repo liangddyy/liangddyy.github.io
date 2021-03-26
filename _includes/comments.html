@@ -64,19 +64,12 @@ load_disqus = true %} {% if load_disqus %}
 </noscript>
 {% endif %} {% endif %} {% when 'gitment' %}
 <div id="container"></div>
-<link rel="stylesheet" href="{{ site.assetsurl }}/assets/gitment/style/default.css">
-<script src="{{ site.assetsurl }}/assets/gitment/dist/gitment.browser.js"></script>
-<script>
-  var gitment = new Gitment({
-    id: '{{ page.url }}',
-    owner: '{{ site.gitment.owner }}',
-    repo: '{{ site.gitment.repo }}',
-    oauth: {
-      client_id: '{{ site.gitment.oauth.client_id }}',
-      client_secret: '{{ site.gitment.oauth.client_secret }}',
-    },
-  })
-  gitment.render('container')
+<script src="https://utteranc.es/client.js"
+        repo="liangddyy/liangddyy.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script> {% when 'other' %}
 <!-- comments -->
 <div id="vcomments"></div>
