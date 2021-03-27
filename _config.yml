@@ -47,7 +47,7 @@ logo_width: 34
 color: "#3399CC" # primary color for header, buttons
 
 # Build settings
-markdown: kramdown
+markdown:           kramdown
 
 # If you add tags to pages, you can link them to some external search
 # If you want to disable this, comment the URL.

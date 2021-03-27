@@ -23,8 +23,8 @@
 #       url: "docs/study/编码规范"
 #     - title: 正则查询
 #       url: "docs/正则查询"
-- title: "一些笔记"
-  url: "docs/notion/"
+# - title: "一些笔记"
+#   url: "docs/notion/"
 - title: "Categories"
   url: "categories"
 - title: "Archive"
