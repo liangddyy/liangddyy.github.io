@@ -14,13 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: liang's blog
-email: liangddyy@gmail.com
-author: liangddyy
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: "liang's blog"
+email: "liangddyy@gmail.com"
+author: "liangddyy"
+description: "梁先生的博客,技术博客,Unity,Android,游戏开发等"
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -36,9 +33,9 @@ github_repo: "liangddyy"
 # up-line,is home page right top
 
 # Optional
-twitter: vsoch
-linkedin: vsochat
-dockerhub: vanessa
+twitter: liangddyy
+linkedin: liangddyy
+dockerhub: liangddyy
 # google-analytics: UA-XXXXXXXXXX
 # Image and (square) dimension for logo (don't start with /)
 # If commented, will use material hat theme
@@ -47,7 +44,7 @@ logo_width: 34
 color: "#3399CC" # primary color for header, buttons
 
 # Build settings
-markdown:           kramdown
+markdown: kramdown
 
 # If you add tags to pages, you can link them to some external search
 # If you want to disable this, comment the URL.

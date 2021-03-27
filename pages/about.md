@@ -8,9 +8,4 @@ menu: 关于
 permalink: /about/
 ---
 
-Nonthing...
-
-
-<div class="md-content"> 
-    {% include comments.html %}
-</div>   
+只是个博客
