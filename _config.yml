@@ -74,7 +74,7 @@ themeColor: black # purple, green, blue, orange, purple, grey
 fixedNav: 'true' # true or false
 
 permalink: /:year/:title/
-markdown:           kramdown
+# markdown: kramdown
 exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor,node_modules]
 
 # Collections
