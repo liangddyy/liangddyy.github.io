@@ -74,7 +74,7 @@ Unity命令行示例
 
 自动删除旧的归档文件
 
-![1](https://539go.com/Img/Unity/Jenkins/1.png)
+![1](/Img/Unity/Jenkins/1.png)
 
 其他
 
