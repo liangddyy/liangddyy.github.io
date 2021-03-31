@@ -8,4 +8,4 @@ menu: 关于
 permalink: /about/
 ---
 
-只是个博客
+什么都没有,不必怀念。
