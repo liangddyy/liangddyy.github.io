@@ -10,7 +10,7 @@ keywords: Unity,UnityEditor,Unity编辑器开发
 
 主要分成两种，一种是从一个编辑器到另外一个编辑器拷贝，一种是想拷贝到系统剪切板。
 
-![menu](/Img/Unity/Editor/QuickCopy/menu.png)
+![menu](/images/Unity/Editor/QuickCopy/menu.png)
 
 ## 从编辑器到剪切板
 
@@ -225,7 +225,7 @@ public static void CopyDir(string sourcePath, string destinationPath)
 
 为了方便自己，打包了一份。在这里 [UnityQuickCopyModule.dll](https://github.com/liangddyy/UnityClipboard/blob/master/UnityQuickCopyModule.dll) ，把该文件放到任意Unity项目，用管理员权限启动Unity，菜单栏安装即可，然后就可以全局通用了。
 
-![menu2](/Img/Unity/Editor/QuickCopy/menu2.png)
+![menu2](/images/Unity/Editor/QuickCopy/menu2.png)
 
 
 

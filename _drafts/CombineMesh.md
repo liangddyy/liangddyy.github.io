@@ -10,7 +10,7 @@ keywords: 开发,
 
 ### 演示
 
-![CombineMesh](/Img/Unity/Editor/CombineMesh.gif)
+![CombineMesh](/images/Unity/Editor/CombineMesh.gif)
 
 ### 实现
 

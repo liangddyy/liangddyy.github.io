@@ -28,12 +28,12 @@ keywords: UnityEditor, UnityBUG
 
 也就是说验证方法 `CopyValide()` 被用来 在点击后才去调用了。
 
-![菜单-未选](/Img/Unity/Editor/HierarchyBUG/菜单-未选.png)
+![菜单-未选](/images/Unity/Editor/HierarchyBUG/菜单-未选.png)
 
-![菜单-未选](/Img/Unity/Editor/HierarchyBUG/菜单-未选.png)
+![菜单-未选](/images/Unity/Editor/HierarchyBUG/菜单-未选.png)
 
-![上下文-未选](/Img/Unity/Editor/HierarchyBUG/上下文-未选.png)
+![上下文-未选](/images/Unity/Editor/HierarchyBUG/上下文-未选.png)
 
-![上下文-已选](/Img/Unity/Editor/HierarchyBUG/上下文-已选.png)
+![上下文-已选](/images/Unity/Editor/HierarchyBUG/上下文-已选.png)
 
 当然，由于验证函数还是执行了，虽然在上下文菜单中没有起作用，但是点击之后仍然有调用。当不满足条件时，是不会执行对应的方法的。这个问题尽管不会导致出错，但也不正确。

@@ -14,12 +14,12 @@ keywords:
 
 在电脑上打开极路由的后台是这样的
 
-![home](/Img/Other/hiwifi/home.png)
+![home](/images/Other/hiwifi/home.png)
 
 
 完全手机的后台，此时只需要将地址栏的`admin_mobile` 改成 `admin_web` 就可以进电脑版的web后台了。
 
-![adminpage](/Img/Other/hiwifi/adminpage.png)
+![adminpage](/images/Other/hiwifi/adminpage.png)
 
 然后
 
@@ -37,12 +37,12 @@ https://app.hiwifi.com/store.php?m=plugins&a=install&rid=r1593903593&sid=3829748
 
 ## 使用
 
-![setting](/Img/Other/hiwifi/setting.png)
+![setting](/images/Other/hiwifi/setting.png)
 
 安装好以后，在配置参数页面配置好自己的账号密码以及加密方式。
 
 然后白名单模式需要填写一个名单，名单内的网站会走代理。代理的网址可以在github上找到相应的项目。（当然，也可以全局模式）
 
-这里我已经提取了一份[gfwlist.txt](/Img/Other/gfwlist.txt) （不是最新的），将内容复制到域名列表即可。
+这里我已经提取了一份[gfwlist.txt](/images/Other/gfwlist.txt) （不是最新的），将内容复制到域名列表即可。
 
 启用插件。

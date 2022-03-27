@@ -12,9 +12,9 @@ keywords:
 
 一进某个页面的时候是这样子的 (旁边的大粗线就是了)   T_T
 
-![resurrection01](/Img/Unity/scripts/resurrection01.png)
+![resurrection01](/images/Unity/scripts/resurrection01.png)
 
-![resurrection02](/Img/Unity/scripts/resurrection02.png)
+![resurrection02](/images/Unity/scripts/resurrection02.png)
 
 
 
@@ -59,11 +59,11 @@ public class ShipDesignVO : IStackObject
 
 然后
 
-![03](/Img/Unity/scripts/03.png)
+![03](/images/Unity/scripts/03.png)
 
 T_T变细变矮了~
 
-![04](/Img/Unity/scripts/04.png)
+![04](/images/Unity/scripts/04.png)
 
 
 

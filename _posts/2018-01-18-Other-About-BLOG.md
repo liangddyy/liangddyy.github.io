@@ -28,9 +28,9 @@ keywords: 生活,其他，博客
 
 不过由于国内网络环境，博客放在Github上总是不那么流畅，所以用了CDN，前些日子闲来无聊进后台看了下，是这样子的：
 
-![cdnData](/Img/Other/otherIMG/cdnData.png)
+![cdnData](/images/Other/otherIMG/cdnData.png)
 
-![cdnData2](/Img/Other/otherIMG/cdnData2.png)
+![cdnData2](/images/Other/otherIMG/cdnData2.png)
 
 一天IP几千，着实吓我一跳。还好心里对自己还是有点逼数的，用了另外一个工具统计了几天才知道CDN后台的统计太虚假。猜测大概是把蜘蛛也算进去了。
 
