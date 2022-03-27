@@ -3,6 +3,15 @@ title: categories
 permalink: /categories/
 ---
 
+## some tags
+<div>
+{% for tag in site.tags %}
+    {% for post in tag.last %}
+      <span class="badge badge-success"><a style="cursor:pointer; color:white" href="/tags/#{{ tag | first }}">{{ tag | first }}</a></span>
+    {% endfor %}
+{% endfor %}
+</div>
+
 # 类别索引
 
 <!-- {{ category | last | size }} 类别数量 -->
@@ -20,14 +29,7 @@ permalink: /categories/
 {% endfor %}
 
 
-# some tags
-<div>
-{% for tag in site.tags %}
-    {% for post in tag.last %}
-      <span class="badge badge-success"><a style="cursor:pointer; color:white" href="/tags/#{{ tag | first }}">{{ tag | first }}</a></span>
-    {% endfor %}
-{% endfor %}
-</div>
+
 
 
 
