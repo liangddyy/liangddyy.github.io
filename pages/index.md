@@ -1,12 +1,12 @@
 ---
 layout: page
-title: liang's old blog
+title: liang's blog
 permalink: /
 ---
 
 # Welcome to my blog
 
-这是一个旧博客,不再更新。新博客地址: [while.work](https://while.work){:target="_blank"}  欢迎！
+<!-- 这是一个旧博客,不再更新。新博客地址: [while.work](https://while.work){:target="_blank"}  欢迎！ -->
 
 {% assign all_posts = "" | split: "" %}
 {% for post in site.posts %}
